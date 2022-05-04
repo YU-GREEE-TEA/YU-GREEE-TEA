@@ -33,6 +33,7 @@ class Tetris(object):
     def __init__(self,bx,by):
         """
         Initialize the tetris object.
+        
         Parameters:
             - bx - number of blocks in x
             - by - number of blocks in y
@@ -176,6 +177,7 @@ class Tetris(object):
     def print_text(self,str_lst,x,y):
         """
         Print the text on the X,Y coordinates. 
+        
         Parameters:
             - str_lst - list of strings to print. Each string is printed on new line.
             - x - X coordinate of the first string
@@ -201,6 +203,7 @@ class Tetris(object):
     def block_colides(self):
         """
         Check if the block colides with any other block.
+        
         The function returns True if the collision is detected.
         """
         for blk in self.blk_list:
@@ -276,6 +279,7 @@ class Tetris(object):
         """
         Remove the line with given Y coordinates. Blocks below the filled
         line are untouched. The rest of blocks (yi > y) are moved one level done.
+        
         Parameters:
             - y - Y coordinate to remove.
         """ 
@@ -288,6 +292,7 @@ class Tetris(object):
     def get_blocks_in_line(self,y):
         """
         Get the number of shape blocks on the Y coordinate.
+        
         Parameters:
             - y - Y coordinate to scan.
         """
